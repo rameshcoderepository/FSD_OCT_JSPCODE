@@ -7,6 +7,21 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<a href="Viewdetails.jsp">ViewDetails</a>
+	<form action="PrimaryDataController" method="post">
+		<table align="center">
+			<tr>
+				<td>MobileNumber</td>
+				<td><input type="text" id="mob" name="mob"></td>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td><input type="text" id="name" name="name"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit"></td>
+			</tr>
+		</table>
+	</form>
 </body>
 </html>

@@ -36,7 +36,8 @@ public class LoginController extends HttpServlet {
 				// Cookie ck=new Cookie("user",username);//creating cookie object
 				// response.addCookie(ck);
 
-				HttpSession session = request.getSession();
+				
+				HttpSession session = request.getSession(true);
 				session.setAttribute("pname", username);
 
 				RequestDispatcher req = request.getRequestDispatcher("/AdminHome.jsp");

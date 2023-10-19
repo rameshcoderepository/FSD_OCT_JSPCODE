@@ -8,11 +8,10 @@
 </head>
 <body>
 	<%
-		String username = request.getParameter("uname");
-		String password = request.getParameter("pwd");
-
-		out.println("welcome" + username);
+		String sesvalue = (String) session.getAttribute("pname");
+		out.println("Welcome"+" "+sesvalue);
 	%>
-<a href="next.jsp">next</a>
+	<a href="Primarydata.jsp">PrimaryData</a>
+	<a href="secondarydata.jsp">SecondaryData</a>
 </body>
 </html>
